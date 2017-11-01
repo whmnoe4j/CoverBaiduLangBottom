@@ -44,11 +44,11 @@ public class TabIndicatorView extends RelativeLayout {
         if (selected) {
             ivTabNormalIcon.setVisibility(View.GONE);
             ivTabFocusIcon.setVisibility(View.VISIBLE);
-            tvTabHint.setTextColor(Color.parseColor("#4f9ef6"));
+            tvTabHint.setTextColor(Color.parseColor("#17A554"));
         } else {
             ivTabNormalIcon.setVisibility(View.VISIBLE);
             ivTabFocusIcon.setVisibility(View.GONE);
-            tvTabHint.setTextColor(getResources().getColor(R.color.colorPrimary));
+            tvTabHint.setTextColor(Color.parseColor("#BFBFBF"));
         }
     }
 

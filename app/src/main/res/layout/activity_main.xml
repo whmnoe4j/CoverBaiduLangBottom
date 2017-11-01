@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.negier.coverbaidulangbottom.MainActivity">
 
     <android.support.v4.app.FragmentTabHost
@@ -19,21 +18,29 @@
             <FrameLayout
                 android:id="@+id/fl_container"
                 android:layout_width="match_parent"
-                android:background="#eee"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="#eee" />
 
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="0dp"
                 android:layout_height="0dp" />
+
+
         </LinearLayout>
     </android.support.v4.app.FragmentTabHost>
-
-</LinearLayout>
+    <ImageView
+        android:id="@+id/iv_speech"
+        android:layout_width="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/tabbar_speech_normal"
+        android:layout_height="70dp" />
+</RelativeLayout>
